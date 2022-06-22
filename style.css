@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background: rgb(29, 27, 27);}
+.box{min-height: 100vh;display: flex; align-items: center; justify-content: center; text-align: center; }
+.sphere{position: absolute;display: flex; align-items: center; justify-content: center; text-align: center; width: 200px; height: 200px;border-radius: 50%; border-radius: 50%;box-shadow: 0 0 5px rgb(77, 74, 74); }
+.sphere span {font-size: 4vmin;color: azure; animation: text 3s ease-in-out infinite; }
+ .sphere::before{position: absolute; content: ''; top: 0; left: 0; height: 100%; width: 100%;border-radius: 50%;  border-radius: 50%;animation: load 4s linear infinite;} 
+@keyframes load {
+    0%{transform: rotate(0deg); box-shadow: 2px 4px 2px rgb(21, 175, 46);}
+    50%{transform: rotate(180deg); box-shadow: 2px 4px 2px rgb(255, 38, 0);}
+    100%{transform: rotate(360deg); box-shadow: 2px 4px 2px rgb(219, 19, 226);}
+}
+@keyframes text{0%,100%{color: rgb(29, 27,27);} 50%{color: azure;}}
